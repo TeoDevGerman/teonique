@@ -19,3 +19,24 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  /* Set a default font */
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 3rem;
+  /* Heading size */
+  margin-bottom: 20px;
+  /* Space below heading */
+}
+
+p {
+  font-size: 1.5rem;
+  /* Paragraph size */
+  max-width: 600px;
+  /* Max width for readability */
+}

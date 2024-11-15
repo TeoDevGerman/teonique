@@ -1,0 +1,149 @@
+/* Content styling */
+.content {
+    display: flex;
+    flex-direction: column;
+
+    /* Positioning content above the globe */
+    z-index: 10;
+    /* Ensure content is above the globe */
+    padding: 20px;
+    /* Add some padding */
+    min-height: 200vh;
+    /* Ensure there is enough space to scroll */
+    text-shadow: 3px 3px 1px rgba(255, 255, 255, 0.479);
+    /* justify-content: space-between; */
+}
+
+
+
+.Title {
+    /* @apply text-blue-500 font-roboto text-8xl; */
+    /* color: theme("colors.custom_green_2"); */
+    color: "rgba(255, 255, 255, 0.479)";
+    text-align: center;
+    font-size: 400%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 20px;
+
+    align-self: center;
+}
+
+.Introduction {
+    display: flex;
+    flex-direction: column;
+    /* or row, depending on your layout */
+    align-items: stretch;
+}
+
+.BioImage {
+    display: flex;
+    flex-direction: row;
+}
+
+.BioCard {
+    align-self: center;
+    flex-grow: 1;
+    margin: 10px;
+
+    text-align: center;
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+
+.Name {
+    /* @apply text-custom_green_2 font-roboto; */
+    color: green;
+    /* justify-content: left; */
+    font-size: 300%;
+}
+
+.Occupation {
+    color: greenyellow;
+    font-size: 200%;
+}
+
+.Bio {
+    color: yellow;
+    font-size: 200%;
+}
+
+.Mission {
+    color: white;
+    font-size: 200%;
+}
+
+.Resume {
+    color: white;
+    font-size: 200%;
+
+    transition: .5s;
+}
+
+.Resume:hover {
+    color: white;
+}
+
+.ContanctCard {
+    flex-grow: 1;
+    margin: 10px;
+
+    display: flex;
+
+    border: 3px solid white;
+    border-radius: 10px;
+    /* align-self: flex-end; */
+}
+
+.PortfolioImage {
+    flex-grow: 1.5;
+    margin: 10px;
+
+    align-self: center;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.FindMe {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    color: green;
+    font-size: 200%;
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.Telegram {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 5px;
+
+    transition: .5s;
+}
+
+.Telegram:hover {
+    border: 3px solid yellowgreen;
+    color: white;
+}
+
+.Email {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 5px;
+
+    transition: .5s;
+}
+
+.Email:hover {
+    border: 3px solid green;
+    color: white;
+}
