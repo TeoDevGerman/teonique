@@ -10,24 +10,50 @@
     /* Add some padding */
     min-height: 200vh;
     /* Ensure there is enough space to scroll */
-    text-shadow: 3px 3px 1px rgba(255, 255, 255, 0.479);
+    text-shadow: 3px 3px 18px rgba(18, 79, 9, 1);
     /* justify-content: space-between; */
 }
 
 
 
 .Title {
-    /* @apply text-blue-500 font-roboto text-8xl; */
-    /* color: theme("colors.custom_green_2"); */
-    color: "rgba(255, 255, 255, 0.479)";
     text-align: center;
-    font-size: 400%;
+    font-size: 200%;
     display: flex;
     flex-direction: row;
     justify-content: left;
     gap: 20px;
 
     align-self: center;
+    /* margin every wehre but top*/
+    margin: 0px 0px 20px 0px;
+
+    /* create a line seperating the title and below*/
+    border-bottom: 3px solid white;
+    background-color: rgba(18, 79, 9, 0.479);
+}
+
+.hover_over_Titleitems {
+    transition: .5s;
+}
+
+.hover_over_Titleitems:hover {
+    color: rgba(60, 255, 6, 0.816)
+}
+
+.onTheLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.onTheRight {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: auto;
 }
 
 .Introduction {
@@ -56,36 +82,30 @@
 
 
 .Name {
-    /* @apply text-custom_green_2 font-roboto; */
-    color: green;
     /* justify-content: left; */
-    font-size: 300%;
+    font-size: 1200%;
 }
 
 .Occupation {
-    color: greenyellow;
-    font-size: 200%;
+    font-size: 1200%;
 }
 
 .Bio {
-    color: yellow;
     font-size: 200%;
 }
 
 .Mission {
-    color: white;
     font-size: 200%;
 }
 
 .Resume {
-    color: white;
     font-size: 200%;
 
     transition: .5s;
 }
 
 .Resume:hover {
-    color: white;
+    color: rgba(60, 255, 6, 0.816);
 }
 
 .ContanctCard {
@@ -100,7 +120,7 @@
 }
 
 .PortfolioImage {
-    flex-grow: 1.5;
+    flex-grow: 1.1;
     margin: 10px;
 
     align-self: center;
@@ -111,13 +131,10 @@
 .FindMe {
     display: flex;
     flex-direction: column;
-
+    
+    text-shadow: none;
     text-align: center;
-    color: green;
     font-size: 200%;
-
-    border: 3px solid white;
-    border-radius: 10px;
 }
 
 .Telegram {
@@ -130,11 +147,14 @@
 }
 
 .Telegram:hover {
-    border: 3px solid yellowgreen;
+    background-color: rgba(18, 79, 9, 0.479);
+    border: 3px solid rgba(60, 255, 6, 0.816);
     color: white;
 }
 
 .Email {
+    display: inline;
+
     border: 3px solid white;
     border-radius: 10px;
     padding: 0px 5px;
@@ -144,6 +164,7 @@
 }
 
 .Email:hover {
-    border: 3px solid green;
+    background-color: rgba(18, 79, 9, 0.479);
+    border: 3px solid rgba(60, 255, 6, 0.816);
     color: white;
 }

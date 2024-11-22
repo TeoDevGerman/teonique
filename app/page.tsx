@@ -1,45 +1,25 @@
 "use client";
 import Link from "next/link";
+import { ReactNode } from "react";
 import Image from 'next/image'
 import "./CustomCSSFiles/buttons.css";
 import "./CustomCSSFiles/introduction.css";
 import foto from "./ProfilBild.jpg";
 
-
-const App = () => {
+const Index = () => {
     return (
         <div className="App">
             <div className="content">
-                {/* Title at the top */}
-                <div className="Title">
-                    <div>
-                        <Link href="/">Teoaka_ 3JS Portfolio</Link>
-                    </div>
-                    <div>
-                        <Link href="./contact" >Contact</Link>
-                    </div>
-                    <div>
-                        <Link href="./about">About</Link>
-                    </div>
-                </div>
-
                 <div className="Introduction">
 
                     <div className="BioImage">
 
                         <div className="BioCard">
+                            <div className="Occupation">
+                                Software <br /> Developer
+                            </div>
                             <div className="Name">
                                 Teoman Wiedenbeck
-                            </div>
-                            <div className="Occupation">
-                                Aspiaring Frontend-Developer
-                            </div>
-                            <div className="Bio">
-                                TU Berlin Bachelor Informatik Student.
-                                I like to develop. In my free time i like to read and learn.
-                            </div>
-                            <div className="Mission">
-                                Learning is fun!
                             </div>
                             <button className="Resume">
                                 <a href="/CV_Wiedenbeck_Teoman_Nejat.pdf" download="Resume_Teoman_Nejat.pdf">Download my Resume</a>
@@ -73,4 +53,16 @@ const App = () => {
     );
 };
 
+
+
+const App = ({ children }: { children: ReactNode }) => {
+    return (
+        <div className="App">
+            <Index />
+            <div className="Content">{children}</div>
+        </div>
+    );
+};
+
 export default App;
+
