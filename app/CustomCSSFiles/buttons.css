@@ -1,5 +1,0 @@
-.base-button {
-    border-radius: theme('borderRadius.lg');
-    background-color: red;
-    padding: theme('spacing.4');
-}

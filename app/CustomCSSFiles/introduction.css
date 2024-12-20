@@ -129,41 +129,32 @@
 }
 
 .FindMe {
-    display: flex;
-    flex-direction: column;
-    
+    display: inline-block;
+    gap: 20px;
+
     text-shadow: none;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
 }
 
+.Email,
 .Telegram {
+    display: inline-block;
     border: 3px solid white;
     border-radius: 10px;
     padding: 0px 5px;
     margin: 5px;
-
     transition: .5s;
+    text-decoration: none;
+    /* Remove underline from links */
+    color: inherit;
+    /* Inherit text color */
+    text-align: center;
+    /* Center text */
 }
 
+.Email:hover,
 .Telegram:hover {
-    background-color: rgba(18, 79, 9, 0.479);
-    border: 3px solid rgba(60, 255, 6, 0.816);
-    color: white;
-}
-
-.Email {
-    display: inline;
-
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 0px 5px;
-    margin: 5px;
-
-    transition: .5s;
-}
-
-.Email:hover {
     background-color: rgba(18, 79, 9, 0.479);
     border: 3px solid rgba(60, 255, 6, 0.816);
     color: white;

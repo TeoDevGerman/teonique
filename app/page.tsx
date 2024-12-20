@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import "./CustomCSSFiles/buttons.css";
 import "./CustomCSSFiles/introduction.css";
 import foto from "./ProfilBild.jpg";
 
@@ -30,15 +29,15 @@ const Index = () => {
                         />
                     </div>
                     {/* Contacts right and below */}
+                    <h1 className='self-center'>How to contact me:</h1>
                     <div className="FindMe">
-                        How to contact me:
-                        <br />
-                        <button className="Telegram">
-                            <a href="https://t.me/Teomandev" target="_blank" rel="noopener noreferrer">Chat with me on Telegram!</a>
-                        </button>
-                        <button className="Email">
-                            <a href="mailto:teoakateo@gmail.com" target="_blank" rel="noopener noreferrer">teoakateo@gmail.com</a>
-                        </button>
+
+                        <div className="FindMe">
+                            <a className="Email" href="mailto:teoakateo@gmail.com" target="_blank" rel="noopener noreferrer">teoakateo@gmail.com</a>
+                            <a className="Email" href="mailto:teomanArbeit@gmail.com" target="_blank" rel="noopener noreferrer">teomanArbeit@gmail.com</a>
+                            <a className="Telegram" href="https://t.me/Teomandev" target="_blank" rel="noopener noreferrer">Chat with me on Telegram!</a>
+                            <a className="Telegram" href="https://github.com/TeoDevGerman" target="_blank" rel="noopener noreferrer">See my other Projects on GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
