@@ -11,9 +11,7 @@ const Index = () => {
         <div className="App">
             <div className="content">
                 <div className="Introduction">
-
                     <div className="BioImage">
-
                         <div className="BioCard">
                             <div className="Occupation">
                                 Software <br /> Developer
@@ -23,9 +21,7 @@ const Index = () => {
                             </div>
                             <button className="Resume">
                                 <a href="/CV_Wiedenbeck_Teoman_Nejat.pdf" download="Resume_Teoman_Nejat.pdf">Download my Resume</a>
-
                             </button>
-
                         </div>
                         <Image
                             className="PortfolioImage"
@@ -40,20 +36,17 @@ const Index = () => {
                         How to contact me:
                         <br />
                         <button className="Telegram">
-                            <a href="https://t.me/Teomandev" target="_blank">Chat with me on Telegram!</a>
+                            <a href="https://t.me/Teomandev" target="_blank" rel="noopener noreferrer">Chat with me on Telegram!</a>
                         </button>
                         <button className="Email">
-                            <a href="mailto:teoakateo@gmail.com" target="_blank">teoakateo@gmail.com</a>
+                            <a href="mailto:teoakateo@gmail.com" target="_blank" rel="noopener noreferrer">teoakateo@gmail.com</a>
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
     );
 };
-
-
 
 const App = ({ children }: { children: ReactNode }) => {
     return (
