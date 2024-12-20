@@ -1,6 +1,5 @@
 "use client";
-import { ReactNode } from "react";
-import Image from 'next/image'
+import Image from 'next/image';
 import "./CustomCSSFiles/buttons.css";
 import "./CustomCSSFiles/introduction.css";
 import foto from "./ProfilBild.jpg";
@@ -47,14 +46,4 @@ const Index = () => {
     );
 };
 
-const App = ({ children }: { children: ReactNode }) => {
-    return (
-        <div className="App">
-            <Index />
-            <div className="Content">{children}</div>
-        </div>
-    );
-};
-
-export default App;
-
+export default Index;
