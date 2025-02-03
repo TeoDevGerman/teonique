@@ -12,6 +12,9 @@ const Title: React.FC = () => {
             </div>
             <div className="onTheRight">
                 <div className="hover_over_Titleitems">
+                    <Link href="/myFavorites">My Favorites</Link>
+                </div>
+                <div className="hover_over_Titleitems">
                     <Link href="/contact">Contact</Link>
                 </div>
                 <div className="hover_over_Titleitems">
